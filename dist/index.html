@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartHub</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/x-icon" href="./img/logo.png">
+</head>
+<body>
+     <!-- header -->
+        <header id="page-header">
+            <nav class="page-nav">
+                <div class="left">
+                    <img src="./img/logo.png" alt="SmartHub">
+                </div>
+                <div class="right">
+                    <div class="imgBox">
+                        <!-- <img src="./img/img.jpeg" alt="User's Image">
+                        <div class="nameImage"></div> -->
+                    </div>
+                    <div class="user pushUserNamehere">
+                        <div></div>
+                    </div>
+                    <div class="action">
+                        <button class="logout hide">Log Out</button>
+                        <button class="login">Sign In</button>
+                    </div>
+                    
+                    <div class="showform" title="">
+                        <img src="./img/add_account1.png" alt="plus icon" title="Add A Post">
+                    </div>
+                </div>
+               
+                
+            </nav>
+        </header>
+
+    <div class="container">
+        <!-- main  -->
+        <main id="page-main">
+            <!-- filter starts here -->
+            <div class="filters">
+                <form name="category_form" class="category_form">
+                    <p>Select Category
+                        <select name="category" class="set_category">
+                            <option value="">Select Category</option>
+                            <option value="fact">Facts</option>
+                            <option value="quote">Quotes</option>
+                            <option value="joke">Jokes</option>
+                        </select>
+                    </p>
+                </form>
+            </div>
+
+            <div class="showResult">
+                showing <div class="res_sult"></div> results for <p class="showResultResult">All categories</p> 
+            </div>
+            <!-- mainQuotes begins here -->
+            <div class="mainQuotes">
+                    <div class="mainQuotes_left">
+                        <div class="topSection">
+                            <div class="profile topSectionleft">
+                                <div class="imgBox profImage">
+                                    <img src="./img/img2.jpeg" alt="Arthur 1">
+                                </div>
+                                <div class="details">
+                                    <p class="dname"></p>
+                                    <p class="ddate">
+                                    </div>
+                            </div>
+                            <!-- like and copy -->
+                            <div class="topSectionRight">
+                                <input type="hidden" name="quotePost" class="quotePostHidden" value="">
+                                </input>
+                                <div class="likePostBox">
+                                    <p class="numLikes">0</p>
+                                    <img class="likePostImg" src="./img/like.png" alt="like icon"
+                                    >
+                                </div>
+                                <span class="copyAndTip">
+                                    <button id="copy">Copy Post</button>
+                                </span>
+                            </div>
+                        </div>
+                       
+                        <div class="post">
+                            
+                        </div>
+
+                        <div class="controls">
+                            <div class="left" id="btns-box">
+                                <span class="btns-cover">
+                                <img class="likePost" src="./img/like.png" alt="like icon"
+                                >
+                                <img class="dislikePost hide" src="./img/dislike.png" alt="like icon"
+                                >
+                                <input type="hidden" class="hiddenId" value="">
+                            </span>
+                            </div>
+                            <div class="right">
+                                <input type="hidden" class="showingPost" value="">
+                                
+                                <button id="prevPost" class="btn">&laquo;&nbsp;Prev.</button>
+                                <button id="nextPost" class="btn">Next&nbsp;&raquo;</button>
+                            </div>
+                            
+                        </div>
+
+                        <!-- loader 2 -->
+                        <div class="loadDull hide">
+                            <div class="circleLoader"></div>
+                            <p>Loading...</p>
+                        </div>
+                           <!-- ends loader 2 snippet -->
+                    </div>
+                    <div class="mainQuotes_right">
+                        <h2>Our Top Arthors</h2>
+                        <div class="auth_profile">
+                            <div class="profile">
+                                    <div class="imgBox">
+                                        <img src="./img/img.jpeg" alt="Arthur 1">
+                                    </div>
+                                    <div class="details">
+                                        <p class="t2">Name : <span>Don Yi</span></p>
+                                        <p>Post(s) : <span>34 Posts</span></p>
+                                    </div>
+                            </div>
+                            <!-- <div class="profile">
+                                    <div class="imgBox">
+                                        <img src="./img/img2.jpeg" alt="Arthur 1">
+                                    </div>
+                                    <div class="details">
+                                        <p>Name : <span>Chris kugga</span></p>
+                                        <p>Posts : <span>22 Posts</span></p>
+                                    </div>
+                            </div> -->
+                        </div>
+                    </div>
+            </div>
+            <!-- <button id="thetial">try me</button> -->
+        </main>
+    </div>
+<!-- footer -->
+<footer id="page-footer">
+<p>Designed by Jhorge klicks &copy; 2022 <span class="hideSm">||</span> <code class="makeblock">Powered by firebase</code></p>	
+<small>made with Love <span>❤</span></small>
+<div class="getIntouch">
+    <div class="iconBox">
+        <!-- <a href="htpps://wa.me/233247697187"><img src="./img/whatsapp.png" alt=""></a> -->
+        <a href="https://wa.link/80kxs7"><img src="./img/whatsapp.png" alt=""></a>
+    </div>
+    <div class="iconBox">
+        <a href="https://t.me/KlicksTech"  target="_blank"><img src="./img/telegram.png" alt=""></a>
+    </div>
+    <div class="iconBox">
+        <a href="https://github.com/jhorgeklicks"  target="_blank"><img src="./img/github1.png" alt=""></a>
+    </div>
+    <div class="iconBox">
+        <a href="https://www.linkedin.com/in/george-acquaye-804774185" target="_blank"><img src="./img/linkedIn.png" alt=""></a>
+    </div>
+</div>
+        </footer>
+    <!-- Modal Form style="display:none;" -->
+
+    <section id="modalContainer" class="hide">
+        <div class="modalContent">
+            <div class="closemodal">X</div>
+
+            <div class="RegBox hide">
+                <div class="shotInfoBox hide">
+                    <p>Account Created for <strong id="userAccountMail">klicksnet@gmail.com</strong> Successfully</p>
+                </div>
+                <span id="pushRegError"></span>
+                <form class="registerForm" name="registerForm">
+                    <div class="group">
+                       <label for="">Enter Your Name</label>
+                       <input type="text" name="username" placeholder="Enter Username" required>
+                    </div>
+     
+                    <div class="group">
+                       <label for="">Select Gender</label>
+                       <select name="gender" required>
+                          <option value="">Select Gender</option>
+                          <option value="male">Male</option>
+                          <option value="female">Female</option>
+                       </select>
+                    </div>
+                    <div class="group">
+                       <label for="">Enter Your Email</label>
+                       <input type="email" name="email" placeholder="Enter email" required>
+                    </div>
+                    <div class="group">
+                       <label for="">Enter Your Password</label>
+                       <input type="password" name="password" placeholder="Enter Password" required>
+                    </div>
+                    <div class="group tcenter">
+                       <button name="createAccount" class="createAccount btn mt2">Create Account</button>
+                    </div>
+              </form>
+            </div>
+
+            <div class="logBox hide">
+                <span id="pushLoginError"></span> <form class="userLogin" name="userLogin">
+                    <div class="group">
+                        <label for="">Enter Your Email</label>
+                        <input type="email" name="email" placeholder="Enter email" required>
+                     </div>
+                    <div class="group">
+                       <label for="">Enter Your Password</label>
+                       <input type="password" name="password" placeholder="Enter Password" required>
+                    </div>
+                    <div class="group tcenter">
+                       <button name="loginUser" class="loginUser btn mt2">Login</button>
+                    </div>
+                    <div class="regBtn">Register Here</div>
+                 </form>
+            </div>
+
+            <div class="quoteBox hide">
+                <div class="shotInfoBox pushQuoteNotice hide">
+                    <p>Post added Successfully</p>
+                </div>
+                <form class="addPostForm" name="postForm">
+                    <div class="group">
+                       <label for="">Select Category</label>
+                       <select name="category" required>
+                          <option value="">Select Post Category</option>
+                          <option value="quote">Quote</option>
+                          <option value="fact">Facts</option>
+                          <option value="joke">Jokes</option>
+                       </select>
+                    </div>
+                    <div class="group">
+                       <label for="">Enter Your Post Here</label>
+                       <textarea name="quote" placeholder="Enter Quote here" required></textarea>
+                    </div>
+                    <div class="group">
+                       <button name="addpostBtn" class="btn mt2">Submit</button>
+                    </div>
+              </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- loader -->
+    <div class="loaderBox hide">
+        <div class="loaderContent">
+            <div class="col-sm-6 text-center">
+                <div class="loader3">
+                    <h2>Loading</h2>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
